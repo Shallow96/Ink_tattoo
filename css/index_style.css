@@ -1,0 +1,11 @@
+html {
+  height: 100%; }
+
+body {
+  background: url("../images/bg_head.png") top center no-repeat;
+  background-size: cover; }
+
+.nav_block {
+  background: none; }
+
+/*# sourceMappingURL=index_style.css.map */
