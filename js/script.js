@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
     $('.owl-carousel').owlCarousel({
@@ -13,6 +12,15 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function() {
+    $('.has-animation').each(function() {
+        $(this).delay($(this).data('delay')).queue(function(){
+            $(this).addClass('animate-in');
+        });
+    });
+});
+
 
 
 

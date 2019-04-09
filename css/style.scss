@@ -30,13 +30,15 @@ body{
 .container{
   max-width: 1200px;
 }
+
 .nav_block{
   background: url("../images/bg_head.png") no-repeat top center;
   height: 500px;
   position: relative;
-  @include max-screen(767px){
+  @include max-screen(991px){
     height: 300px;
     background-size: cover;
+    padding: 0;
   }
   .navbar {
     width: 100%;
@@ -953,5 +955,127 @@ footer{
         margin-bottom: 20px;
       }
     }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.has-animation {
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.has-animation .hide {
+  opacity: 0;
+}
+.has-animation.animate-in .hide {
+  animation: textHidden 0.1s 1.5s forwards;
+}
+.has-animation.animate-in:before, .has-animation.animate-in:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 10;
+}
+.has-animation.animate-in:before {
+  background-color: #aeaeae;
+}
+.has-animation.animate-in:after {
+  background-color: #e7e5d0;
+  animation-delay: .5s;
+}
+.has-animation.animation-ltr.animate-in:before {
+  animation: revealLTR 1.8s ease;
+}
+.has-animation.animation-ltr.animate-in:after {
+  animation: revealLTR 1s .6s ease;
+}
+.has-animation.animation-rtl.animate-in:before {
+  animation: revealRTL 1.8s ease;
+}
+.has-animation.animation-rtl.animate-in:after {
+  animation: revealRTL 1s .6s ease;
+}
+.has-animation.animation-ttb.animate-in:before {
+  animation: revealTTB 1.8s ease;
+}
+.has-animation.animation-ttb.animate-in:after {
+  animation: revealTTB 1s .6s ease;
+}
+.has-animation.animation-btt.animate-in:before {
+  animation: revealBTT 1.8s ease;
+}
+.has-animation.animation-btt.animate-in:after {
+  animation: revealBTT 1s .6s ease;
+}
+
+@keyframes revealRTL {
+  0% {width: 0;right: 0;}
+  65% {width: 100%;right: 0;}
+  100% {width: 0;right: 100%;}
+}
+
+@keyframes revealLTR {
+  0% {width: 0;left: 0;}
+  65% {width: 100%;left: 0;}
+  100% {width: 0;left: 100%;}
+}
+
+
+@keyframes revealTTB {
+  0% {height: 0;top: 0;left: 0;}
+  65% {height: 100%;top: 0;left: 0}
+  80% {height: 0;top: 100%;left: 0;}
+  100% {height: 0;top: 100%;left: 0;}
+}
+
+
+@keyframes revealBTT {
+  0% {
+    height: 0;
+    //width: 0;
+    bottom: 0;
+    left: 0;
+  }
+  65% {
+    height: 100%;
+    //width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  100% {
+    height: 0;
+    //width: 0;
+    bottom: 100%;
+    left: 0;
+  }
+}
+
+@keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  90%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
