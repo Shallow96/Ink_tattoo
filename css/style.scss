@@ -907,6 +907,7 @@ body{
 }
 
 footer{
+  margin-top: -6px;
   .container-fluid{
     background-color: #aeaeae;
     .foot_menu{
@@ -954,6 +955,24 @@ footer{
       @include max-screen(992px){
         margin-bottom: 20px;
       }
+    }
+  }
+}
+
+.slider_frame{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  iframe{
+    max-width: 1500px;
+    width: 100%;
+    height: 700px;
+    @include max-screen(991px){
+      height: 500px;
+    }
+    @include max-screen(767px){
+      height: 300px;
     }
   }
 }

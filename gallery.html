@@ -11,9 +11,11 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+
 </head>
 <body>
 <!--//////////////Head-->
@@ -55,8 +57,92 @@
     </div>
 </div>
 
-
 <div class="has-animation animation-rtl" data-delay="800">
+    <div class="container-fluid slider_smooth hide">
+        <div class="slider" id="slider" >
+            <div class="slider__content" id="slider-content">
+                <div class="slider__images">
+                    <div class="slider__images-item slider__images-item--active" data-id="1">
+                        <img src="images/slider_item_1.jpg"/>
+                    </div>
+                    <div class="slider__images-item" data-id="2">
+                        <img src="images/slider_item_2.jpg"/>
+                    </div>
+                    <div class="slider__images-item" data-id="3"><img src="images/slider_item_3.jpg"/></div>
+                    <div class="slider__images-item" data-id="4"><img src="images/slider_item_4.jpg"/></div>
+                    <div class="slider__images-item" data-id="5"><img src="images/slider_item_5.jpg"/></div>
+                    <div class="slider__images-item" data-id="6"><img src="images/slider_item_3.jpg"/></div>
+                </div>
+                <div class="slider__text">
+                    <div class="slider__text-item slider__text-item--active" data-id="1">
+                        <div class="slider__text-item-head">
+                            <h3>Ink Tattoo</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit.”</p>
+                        </div>
+                    </div>
+                    <div class="slider__text-item" data-id="2">
+                        <div class="slider__text-item-head">
+                            <h3>Ink Tattoo</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit.”</p>
+                        </div>
+                    </div>
+                    <div class="slider__text-item" data-id="3">
+                        <div class="slider__text-item-head">
+                            <h3>Ink Tattoo</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit.”</p>
+                        </div>
+                    </div>
+                    <div class="slider__text-item" data-id="4">
+                        <div class="slider__text-item-head">
+                            <h3>Ink Tattoo</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit.”</p>
+                        </div>
+                    </div>
+                    <div class="slider__text-item" data-id="5">
+                        <div class="slider__text-item-head">
+                            <h3>Ink Tattoo</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit.”</p>
+                        </div>
+                    </div>
+                    <div class="slider__text-item" data-id="6">
+                        <div class="slider__text-item-head">
+                            <h3>Ink Tattoo</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__nav">
+                <div class="slider__nav-arrows">
+                    <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+                    <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+                </div>
+                <div class="slider__nav-dots" id="slider-dots">
+                    <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+                    <div class="slider__nav-dot" data-id="2"></div>
+                    <div class="slider__nav-dot" data-id="3"></div>
+                    <div class="slider__nav-dot" data-id="4"></div>
+                    <div class="slider__nav-dot" data-id="5"></div>
+                    <div class="slider__nav-dot" data-id="6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="has-animation animation-ltr" data-delay="1000">
     <div class="container-fluid gallery hide">
         <div class="row">
             <div class="col-12 col-lg gallery_headline d-flex justify-content-center align-items-center ">
@@ -270,6 +356,12 @@
     </div>
 </div>
 
+<div class="has-animation animation-ttb" data-delay="1200">
+    <div class=" slider_frame hide">
+        <iframe class="lazy-loaded" frameborder="0" src="slider/index.html"></iframe>
+    </div>
+</div>
+
 <div class="has-animation animation-btt" data-delay="1500">
     <footer class="hide">
         <div class="container-fluid ">
@@ -303,6 +395,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+<script src="js/index.js"></script>
+
 
 </body>
 </html>
